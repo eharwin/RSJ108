@@ -1,63 +1,114 @@
 <!doctype html>
 <html>
-  <head><meta name="data-remix-projectId" content="11097">
-<meta name="data-remix-projectTitle" content="Instruction Challenge">
-<meta name="data-remix-projectAuthor" content="khepworth">
-<meta name="data-remix-dateUpdated" content="2016-04-08T18:06:26.528Z">
-<meta name="data-remix-host" content="https://thimble.mozilla.org">
-<meta name="data-remix-readonly" content="null">
+<head>
+<meta charset="utf-8">
+<title>How to Use a Camera</title>
 
-    <meta charset="utf-8">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #555;
+}
 
-    <!--
+/* HEADER */
+header {
+  background: #A1D0EB;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-Make your own step-by-step guide
-================================
+header .title {
+  text-align: left;
+}
 
-This template allows you to build a more advanced step-by-step guide.
-The example theme here is for you to change as much as you like to
-create appearance and content which are truly your own.
+header img {
+  width: 80px;
+  height: 80px;
+}
 
-READ THROUGH THE COMMENTS. This is a comment. Everything inside of
-this for HTML or '/*' for CSS, is not processed as code, but
-instead are just text comments about the code. For this project, the
-comments will give you instructions, hints and guides to completing
-the project, so skim down through the comments to get an understanding
-of what you are being asked to do.
+/* WRAPPER */
+.wrapper {
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
 
-GET ORIENTED IN THE CODE. HTML is made up of tags that look like
-this <p> </p>. The tags tell you something about the information
-contained between them. Click on the tags in the code on this side
-of the editor to get a description of what each tag is for.
+/* INTRO */
+.introduction {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+}
 
-IN THIS CHALLENGE, YOU WILL LEARN ABOUT:
+hr {
+  border: none;
+  border-top: 1px solid #D3E3E8;
+}
 
-- HTML: Nested lists
-- HTML: Unordered list
-- HTML: Captions
-- CSS: Borders
-- CSS: Embedding images and videos
+/* LIST */
+ul {
+  background: #D3E3E8;
+  border: 1px solid #555;
+  padding: 0;
+}
 
--->
+ul li {
+  list-style: square inside;
+  padding: 8px;
+}
 
+ul li:first-child {
+  font-weight: bold;
+  list-style: none;
+}
 
-    <title>Evan Harwin's How to Use a Camera</title>
-  <script src="https://thimble.mozilla.org/resources/remix/index.js" type="text/javascript"></script>
+/* STEPS */
+.step-by-step {
+  padding-left: 20px;
+}
+
+.step-by-step li {
+  margin-bottom: 20px;
+}
+
+.content {
+  background: #fff;
+  padding: 15px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.15);
+  border-radius: 6px;
+}
+
+/* MEDIA */
+img, iframe {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.caption {
+  font-size: 12px;
+  color: #444;
+}
+
+/* FOOTER */
+footer {
+  background: #A1D0EB;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 12px;
+}
+</style>
 </head>
-  <body>
 
-    <!--
-TASK 1
-=======================================================
-Replace the header contents: 
-- replace logo with an image of your own (100px x 100px and containing transparency). 
-- replace 'Firstname Lastname' with your name
-- replace 'Name of Site' with a new site name
--->
+<body>
 
-    <header>
-  <div>
-    <h1>Evan Harwin's How to Use a Camera</h1>
+<header>
+  <div class="title">
+    <h1>How to Use a Camera</h1>
     <h3>An Instruction Challenge for JOUR108</h3>
   </div>
 
@@ -66,383 +117,107 @@ Replace the header contents:
   </a>
 </header>
 
-        <div class="introduction">
+<div class="wrapper">
 
-          <div class="information">
-            <h1>Taking pictures, especially good ones, can be a bit tricky at first. 
-              With a simple breakdown, it becomes much easier to understand! </h1>
+<article>
 
-            <hr>
-            <p><b>Time to read:</b> 5 minutes<br>
-              <b>Awesome rating:</b> 100% awesome</p>
-            <hr>
+<div class="introduction">
+  <h2>
+    Taking great photos can feel difficult at first, but breaking it down makes it easy.
+  </h2>
 
-            <p>
-          </div>
+  <hr>
 
-          <aside>
+  <p>
+    <b>Time to read:</b> 5 minutes<br>
+    <b>Awesome rating:</b> 100% awesome
+  </p>
 
-            <!--
-TASK 3
-=======================================================
-Add your Things You'll Need. 
-** Be careful to keep all the HTML tags intact when you are changing the text.
--->         
-            <ul class="list-of-items">
-              <li><h2>Things You'll Need</h2></li>
-              <li>Camera</li>
-              <li>SD Card</li>
-              <li>Patience</li>
-              <li>Optional: Editing Software</li>
-             
-            </ul>
-          </aside>
-        </div>
+  <hr>
 
+  <ul>
+    <li>Things You'll Need</li>
+    <li>Camera</li>
+    <li>SD Card</li>
+    <li>Patience</li>
+    <li>Optional: Editing Software</li>
+  </ul>
+</div>
 
-        <!--
-TASK 4
-=======================================================
-Add your steps. When you need a new step, copy and paste all of the code of an entire step, then edit the contents.
--->         
-        <ol class="step-by-step">
+<ol class="step-by-step">
 
-          <!-- A new step -->
-          <li>
-            <div class="content">
-              <h3>Familiarize Yourself With Your Camera</h3>
-              <p>Cameras tend to have quite a lot of buttons, switches, dials, and more. The easiest way to familiarize yourself with the controls of your camera is to
-              look up the users manual or quickstart guide for your specific camera and take 10 minutes to learn all of the controls.</p> 
-            </div>
-          </li>
+<li>
+  <div class="content">
+    <h3>Familiarize Yourself With Your Camera</h3>
+    <p>
+      Learn your camera’s buttons and settings using the manual or quick start guide.
+    </p>
+  </div>
+</li>
 
-          <!-- A new step -->
-          <li>
-            <div class="content">
-              <h3>Insert and Format your Card</h3>
-              <p>A SD card is needed to be able to save your photos. Some cameras and all phones will have built in memory to save your pictures but
-              many handheld-dedicated digital or mirroless cameras will not. Insert your sd card into the camera and a prompt will more than likely show up
-              asking if you'd like to format your card in which you will click yes. If this dialogue does not appear, navigate through settings and find format.</p>
+<li>
+  <div class="content">
+    <h3>Insert and Format Your SD Card</h3>
+    <p>
+      Insert your SD card and format it in settings to prepare it for use.
+    </p>
 
-              <!--
-This block contains a photo and has a caption.
-We have used a <div> to group and position the flickr photo
-with a paragraph to create a photo with a caption.
--->
-              <a <a data-flickr-embed="true" href="https://www.flickr.com/photos/204528267@N02/55242622739/in/dateposted-public/" title="RkAXtNw"><img src="https://live.staticflickr.com/65535/55242622739_da35a9a036_z.jpg" width="640" height="469" alt="RkAXtNw"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script> ></a>
-              <p> Results You Can Receive From Good Shooting.</p>
-            </div>
-          </li>
+    <img src="https://live.staticflickr.com/65535/55242622739_da35a9a036_z.jpg" alt="Camera example">
+    <p class="caption">Results you can get from good shooting practice.</p>
+  </div>
+</li>
 
-          <!-- A new step -->
-          <li>
-            <div class="content">
-              <h3>Change Camera Settings</h3>
-              <p>There are three main, important settings that most cameras will have: ISO, apeture, and shutter speed. This is commonly refered to as the "Exposure
-              Traingle." The video which I have linked down below does a great job at explaining what each of these are responsible for. There is no one way to set up your
-              camera as different conditions will warrant different setting. For example, you may want your apeture lower for a portrait, while you may want it higher for a 
-              landscape photo. The best way to find correct settings is experiment and see what works!</p>
+<li>
+  <div class="content">
+    <h3>Adjust Camera Settings</h3>
+    <p>
+      Learn ISO, aperture, and shutter speed (the exposure triangle) and experiment.
+    </p>
 
+    <iframe 
+      src="https://www.youtube.com/embed/TcpQ4OAKVpQ"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+  </div>
+</li>
 
-              <iframe  width="100%" 
-  height="315" 
-  src="https://www.youtube.com/embed/TcpQ4OAKVpQ" 
-  title="YouTube video player"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen></iframe>
-            </div>
+<li>
+  <div class="content">
+    <h3>Experiment</h3>
+    <p>
+      Practice is the key to improving photography skills.
+    </p>
+  </div>
+</li>
 
-          </li>
+<li>
+  <div class="content">
+    <h3>Optional: Edit Photos</h3>
+    <p>
+      Editing helps refine your images. Shooting in RAW gives more flexibility.
+    </p>
+  </div>
+</li>
 
-          <!-- A new step -->
-          <li>
-            <div class="content">
-              <h3>Experiment!</h3>
-              <p>This is the most important step besides having access to a camera. Taking photos in the real world will be the only way to truly perfect your photography skills.
-              Using a camera can be tricky, and each one differs in it's interface and how it operates but when you get used to it, it will be a breeze!</p> 
-            </div>
-          </li>
+</ol>
 
-          <!-- A new step -->
-          <li>
-            <div class="content">
-              <h3>Optional: Edit Your Photos</h3>
-              <p>You may decide to also edit your photos. This is crucial to get the exact type of look you want but is not required if you just want to capture 
-              memories and get decent photos. Many editing softwares and tutorials exist, I personally prefer photoshop as it provides endless controls to alter your
-              photographs. One important thing to note is that some cameras may give you the option to shoot in "RAW." This is the most editable photo format and 
-              will provide you with the best results in the end.</p> 
-            </div>
-          </li>
+</article>
 
+</div>
 
+<footer>
+  <p>
+    Video: 
+    <a href="https://www.youtube.com/watch?v=TcpQ4OAKVpQ">
+      How to Use a Camera | Beginner Guide
+    </a>
+  </p>
 
-        </ol>
+  <p>
+    Images: potatorat45 (Imgur + Flickr)
+  </p>
+</footer>
 
-      </article>
-
-    </div>
-
-    <!--
-TASK 5
-=======================================================
-Change the text and links in the footer of this page to acknowledge the sources of your images and youtube videos. If you made all your images and videos, then say so here. 
-** NOTE: Broken links will be heavily penalized in grading.
--->         
-
-    <footer>
-      <p>Youtube Video by Colt Kirwan <a href="https://www.youtube.com/watch?v=TcpQ4OAKVpQ" title="
-How to Use a Camera | A Beginner’s Guide</a>.</p>
-     
-<p>Image is by potatorat45<a href="https://imgur.com/gallery/first-shots-of-foto-200-aKi6C47#/t/camera" title="First shots of foto 200">potatorat45 from Imgur</a></p>
-    </footer></p>
-    <!--
-TASK 6
-=======================================================
-Customise the visual style and appearance of your guide.
-- The CSS below controls all the colors fonts and positioning on this HTML page.
-- Be aware, you can break your page quite easily with this part of CSS.
--->         
-
-    <style media="screen" type="text/css">
-
-      /* STRUCTURAL ELEMENTS */
-
-      html {
-        position: relative;
-        min-height: 100%;
-        min-width: 100%;
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-        overflow-x: hidden; 
-      }
-      
-      body {
-        margin:0 0 130px;
-        width:100%;
-        font-weight:normal;
-        font-family:Arial, sans-serif;         /* CHANGE THE FONT HERE */
-        color:#555;         /* CHANGE THE FONT COLOR HERE */
-      }  
-
-      /* PAGE LAYOUT */
-
-      header, footer {
-        padding:5%;
-        border:0 10%;
-        background-color:#A1D0EB;          /* CHANGE THE HEADER AND FOOTER COLOR HERE */
-        width:100%;
-        margin:0px;        
-      }
-
-      footer {
-        width: 100%;
-        bottom: 0;
-        left: 0;
-        position: float;
-        height:70px;
-      }
-
-      header img {
-        padding-right: 10%;
-        position: relative;
-      }
-
-      .wrapper {
-        width:80%;
-        max-width:650px;
-        margin:0 auto;
-        padding:30px;
-      }
-      
-      
-      /* BASIC STYLES FOR THE PAGE */
-      
-      a {
-        color:#1593A1;         /* CHANGE THE LINK COLOR HERE */
-        font-weight:bold;
-      }
-
-      /* Heading styles */
-      h1 {
-        margin:0;
-        width:100%;
-        font-weight:bold;
-        font-family:Arial, sans-serif;          /* CHANGE THE HEADER FONT HERE */
-      }
-
-      h2, h3, h4 {
-        margin:0 0 0.5em;
-        padding-top: 10px;
-        font-weight:normal;
-      }
-
-      /* Paragraph Text styles */
-      p {
-        margin:16px 0;
-        line-height:1.4;
-        font-weight:normal;
-      }
-
-      /* Styles for unordered lists <ul> */
-      ul {
-        font-family:"Courier New", Courier, monospace;
-        box-shadow:0px 2px 10px #ddd;
-        background-color: #D3E3E8;          /* CHANGE THE THINGS BACKGROUND COLOR HERE */
-        border: 1px solid #555;           /* CHANGE THE THINGS BORDER HERE */
-        padding:0;
-        margin:2em 0 0;
-        position:relative;
-        z-index:200;
-
-      }
-
-      /* Styles for unordered list items <li> */
-      ul li {
-        list-style-type: none;
-        border-top: 1px dotted #555; 
-        font-size:14px;
-        color:#000;
-        height: auto;
-        padding: 7px 10px 5px 25px;
-        list-style-type: square;
-        list-style-position: inside;
-        color:#333;
-      }
-
-      .content {
-        background: #fff;          /* CHANGE THE INSTRUCTION BACKGROUND COLOR HERE */
-      }
-
-      .step-by-step li:before {
-        background: #D3E3E8;          /* CHANGE THE INSTRUCTION NUMBER BACKGROUND COLOR HERE */
-        border-top-left-radius: 50px;          /* CHANGE THE INSTRUCTION SHAPE HERE */
-        border-bottom-left-radius: 50px;
-      }
-
-
-      /* Object styles */
-      .step-by-step img,
-      .step-by-step iframe {
-        width:100%;
-        margin-bottom:10px;
-      }
-
-      img.logo {
-        width:auto;
-        height:100%;
-      }
-
-
-      /* ADVANCED STYLES*/
-
-      /* Styles for the guide introduction wrapper */
-      .introduction {
-        padding:0px;
-        position:relative;
-        margin-bottom:40px;
-        overflow:hidden;
-        background:#fff;
-      }
-
-      hr {
-        border: 0; 
-        height: 0; 
-        border-top: 1px solid #D3E3E8; 
-      }
-
-
-      ul li:first-child {
-        list-style-type: none;
-        border-top: none;
-      }
-
-
-      /* Hover state styles for list items inside unordered list <li> */
-      ul li:hover {
-        background-color: #eedc9c;
-      }
-
-
-      /* Step by step instructions */
-      .step-by-step {  
-        padding:0;
-        position: relative;
-        z-index:0;
-        margin-left:40px;
-      }
-      .step-by-step li {
-        position: relative;
-        text-align: left;
-        list-style-type: decimal;
-        margin-bottom:20px;
-      }
-      .step-by-step li ol {
-        margin-top:20px;
-      }
-      .step-by-step li li {
-        list-style-type: lower-alpha;
-      }
-      .step-by-step .media-content {
-        position:relative;
-      }
-      .step-by-step .media-content img {
-        display:block;
-        margin:0;
-        width:100%;
-        height:auto;
-      }
-      .step-by-step .media-content .caption {
-        position:absolute;
-        padding:0.5em 1em;
-      }
-      .step-by-step .media-content iframe {
-        display:block;
-        margin:0;
-      }
-
-      /* Content for each step */
-      .content {
-        padding: 20px;
-        margin-bottom:10px;
-        border-radius: 0px 5px 5px 5px;
-        box-shadow: 0px 0px 7px 0px rgba(0,0,0,.25);           
-      }       
-
-      /* Advanced CSS for item number styling */
-      .step-by-step li:before {
-        content: "";
-        width: 40px;
-        height:80px;
-        position: absolute;
-        top:0;
-        left:-40px;
-        z-index:-1;
-        background: #D3E3E8; 
-        border-top-left-radius: 50px;
-        border-bottom-left-radius: 50px;
-      }
-
-      /* Styles for sub-list item numbering */
-      .step-by-step li li:before {
-        background: #333; 
-      }
-
-
-      /* Footer credits */
-      footer {
-        margin-top:50px;
-      }
-      footer p {
-        font-size:12px;
-        color:#000;
-      }
-
-      a img {
-        border:none;
-      }
-    </style>
-
-  </body>
+</body>
 </html>
